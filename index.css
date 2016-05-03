@@ -1,1 +1,80 @@
 /***Board***/
+#title {
+  text-align: center;
+  margin: 0 0 0 1em;
+  display: block;
+  width: 835px;
+  padding: 1em 0 1.5em 0;
+  font-family: Bodoni;
+}
+
+#highlight {
+  color: #2979FF;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls input {
+  margin: 3em 4em;
+  position: relative;
+  display: block;
+  padding: 0.5em 1em;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #fff;
+  color: #ecf0f1;
+
+  transition: background-color .3s;
+}
+
+#controls button {
+  margin: 3em 4em;
+  position: relative;
+  display: block;
+  padding: 0.5em 1em;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2979FF;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1em;
+}
+
+.container-left {
+  width: 71%;
+  margin: 0;
+  display: inline-block;
+}
+
+.container-right {
+  width: 20%;
+  display: inline-block;
+  transform: translate(0, -180%);
+  margin-left: 2em;
+}
+
+#golBoard {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  margin: 0 0 0 2em;
+  padding: 1em;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}

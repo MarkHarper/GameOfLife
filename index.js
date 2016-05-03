@@ -116,10 +116,10 @@ var gol = (function() {
 
       //Board prototype should contain: board size, cell size, col/row # and a load function
       app.Board = function() {
-        this.height = '500';
-        this.width = '500';
-        this.cellHeight = '10';
-        this.cellWidth = '10';
+        this.height = '400';
+        this.width = '800';
+        this.cellHeight = '4';
+        this.cellWidth = '4';
         this.rows = Math.floor(Number(this.height) / (Number(this.cellHeight)));
         this.columns = Math.floor(Number(this.width) / (Number(this.cellWidth)));
       }
@@ -142,7 +142,7 @@ var gol = (function() {
           ctx.moveTo(0, y);
           ctx.lineTo(cellTotal, y);
         }
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 0.3;
         ctx.strokeStyle = "#ddd";
         ctx.stroke();
       }
@@ -201,13 +201,13 @@ var gol = (function() {
           });
           start.addEventListener('click', function(evt) {
             cycle();
-            function cycle() {
-                 setTimeout(function () {
-                     app.run(board)
-                     cycle();
-                 }, 100);
-             }
           });
+          function cycle() {
+               setTimeout(function () {
+                   app.run(board)
+                   cycle();
+               });
+           }
         }
       };
 
